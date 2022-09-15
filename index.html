@@ -5,10 +5,16 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>hostinger By - Sourav</title>
+  <link rel="shortcut icon" href="https://assets.hostinger.com/images/favicons/favicon-97d9192479.ico">
+  <meta name="description"
+    content="Go online with Hostinger, make your perfect website today. Check our plans and their features. We have all you need for online success.">
+  <meta name="keywords" content="hostinger, hostinger hosting, hostinger services, hostinger web hosting">
+  <title>Hostinger By - Sourav</title>
   <link rel="stylesheet" href="css/header.css" />
   <link rel="stylesheet" href="css/header-part.css" />
+  <link rel="stylesheet" href="css/offer-box.css" />
 
+  <link rel="stylesheet" href="assets/animate.min.css" />
   <!-- CSS only -->
 
   <script src="https://unpkg.com/feather-icons"></script>
@@ -16,8 +22,8 @@
 
 <body>
   <header class="header">
-    <nav class="navbar">
-      <img src="images/logo.png" width="100px" class="nav-img" />
+    <nav class="navbar animate__animated animate__fadeInDown">
+      <img src="images/logo.png" width="100px" class="nav-img" alt="icon" />
       <i data-feather="align-left" class="nav-toggal" id="nav-tgl"></i>
 
       <div class="menu">
@@ -162,51 +168,88 @@
       <div class="row header-part">
         <!-- this is header content texts  -->
         <div class="col-md header-content">
-          <h1 class="hdr-title">Savings to Set Your Website in Motion</h1>
-          <h1 class="offer-price">149.00</h2>
-            <p class="offer-des">Get things moving with a free domain, lifetime SSL, and DDoS protection included with a
+          <h1 class="hdr-title animate__animated animate__fadeInDown">Savings to Set Your Website in Motion</h1>
+          <h1 class="offer-price animate__animated animate__zoomIn ">149.00</h2>
+            <p class="offer-des  animate__animated animate__slideInUp">Get things moving with a free domain, lifetime
+              SSL, and DDoS protection included with a
               four-year subscription.</p>
             <!-- offer price time counter  -->
-            <div class="offer-time">
-              <div class="time-box">
-                <p class="time">04</p>
+            <div class="offer-time  ">
+              <div class="time-box  animate__animated animate__slideInRight">
+                <p class="time" id="day">04</p>
                 <p class="type">Days</p>
               </div>
-              <div class="time-box">
-                <p class="time">60</p>
+              <div class="time-box   animate__animated animate__slideInLeft">
+                <p class="time" id="hour">60</p>
                 <p class="type">Hour</p>
               </div>
-              <div class="time-box">
-                <p class="time">13</p>
+              <div class="time-box animate__animated animate__slideInRight">
+                <p class="time" id="min">13</p>
                 <p class="type">Min</p>
               </div>
-              <div class="time-box">
-                <p class="time">40</p>
+
+              <div class="time-box animate__animated animate__slideInLeft">
+                <p class="time" id="sec">40</p>
                 <p class="type">Sec</p>
               </div>
             </div>
-<a href="#" class="get-btn">Get Started</a>
-<p class="back-tip">Get exclusive 30-day money-back guarantee</p>
+            <a href="#" class="get-btn animate__animated animate__slideInUp">Get Started</a>
+            <p class="back-tip animate__animated animate__slideInRight">Get exclusive 30-day money-back guarantee</p>
 
         </div>
 
         <!-- this is side images  -->
-        <div class="col-md hero-tab">
-          <img src="images/hero-img.png" class="hero-img" />
+
+        <div class="col-md hero-tab ">
+          <img src="images/hero-img.png" class="hero-img animate__animated animate__slideInRight " alt="Hero-image" />
         </div>
+
       </div>
     </div>
   </header>
 
 
-<div class="box" style="height: 3000px;"></div>
 
+  <!-- this is the offer price part  -->
+
+  <div class="price-part">
+
+    <!-- top info box  -->
+    <div class="info-about">
+      <h1 class="tit"><span> All-In-One</span> Web Hosting</h1>
+      <div class="des">
+        </p>We prepared the best web hosting plan for you to start. You will be able to adjust plans as you go - our
+        custom-built algorithm will provide suggestions based on your usage.</p>
+        <a href="#" class="see-more"><span class="line"></span>See More Plans</a>
+      </div>
+    </div>
+
+
+    <!-- price tab offer  -->
+    <div class="price-title">
+      <img src="images/title-shape-left.png"/>
+      <h1>Best Web Hosting</h1>
+      <img src="images/title-shape-right.png"/>
+    </div>
+    <div class="select-offer">
+      <div class="price-rs">₹149.00/mo</div>
+      <p class="renew">₹249.00/mo when you renew</p>
+      <a href="#" class="select-now">Select</a>
+    </div>
+
+<!-- plain dettels -->
+
+
+  </div>
+
+
+
+  <!-- this is the end add Js Here  -->
 
   <script src="assets/jquery.min.js"></script>
-  <script src="js/header.js"></script>
-  <script>
-    feather.replace();
-  </script>
+  <script src="assets/jquery-countdown/jquery.countdown.min.js"></script>
+  <script src="js/main.js"></script>
+
 </body>
 
 </html>

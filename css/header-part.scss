@@ -9,7 +9,7 @@ $color: #bff3f7;
   justify-content: center;
   align-items: center;
   padding-top: 70px;
-
+  overflow: hidden;
   .header-content {
     // background-color: green;
     height: 100%;
@@ -62,7 +62,7 @@ $color: #bff3f7;
       padding: 10px;
       margin-top: 30px;
       .time-box {
-        background-color: #1623a1;
+        background-color: #1e38a8;
         padding: 12px 30px;
         border-radius: 50px;
         color: $color;
@@ -99,6 +99,13 @@ $color: #bff3f7;
       text-align: center;
       color: $color;
       margin-top: 40px;
+      font-size: 15px;
+      &::before {
+        width: 15px;
+        content: url(https://assets.hostinger.com/images/index-new/check-82319b207b.svg);
+        display: inline-block;
+        margin-right: 5px;
+      }
     }
   }
   .hero-tab {
@@ -107,14 +114,12 @@ $color: #bff3f7;
     align-items: center;
     width: 40%;
     height: 100%;
-    padding: 30px;
+    padding-right: 50px;
     .hero-img {
       width: 100%;
+      max-width: 450px;
       overflow: hidden;
       transition: 0.5s;
-      &:hover {
-        margin-top: -10px;
-      }
     }
   }
 }
@@ -147,7 +152,7 @@ $color: #bff3f7;
 }
 @media only screen and (max-width: 600px) {
   .header-part {
-    padding-top: 0px !important;
+    padding-top: 50px !important;
     .header-content {
       width: 100%;
       height: 100%;
@@ -184,8 +189,6 @@ $color: #bff3f7;
   .header-part {
     padding-top: 60px !important;
     .header-content {
-      // background-color: green;
-
       .offer-time {
         flex-wrap: wrap;
       }
@@ -196,5 +199,23 @@ $color: #bff3f7;
         width: 100% !important;
       }
     }
+  }
+}
+
+@keyframes img-animate {
+  0% {
+    margin-top: 0px;
+  }
+  25% {
+    margin-top: 2.5px;
+  }
+  50% {
+    margin-top: 5px;
+  }
+  75% {
+    margin-top: 2.5px;
+  }
+  100% {
+    margin-top: 0px;
   }
 }
