@@ -1,0 +1,17 @@
+.header-part {
+  height: 100vh;
+  .hero-tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .hero-img {
+      width: 400px;
+      overflow: hidden;
+      transition: 0.5s;
+      &:hover {
+        margin-top: -10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,338 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+.header {
+  width: 100%;
+  height: 100vh;
+  background-color: #274cb0;
+
+  //   navbar css
+  .navbar {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    transition: 0.3s;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    padding: 0px 40px;
+    .nav-img {
+      filter: brightness(0) invert(1);
+    }
+    .nav-toggal {
+      display: none;
+    }
+    // css for nav bar options
+    .menu .menu-item {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .menu-close {
+        display: none;
+        float: right;
+        margin: 10px 30px;
+        opacity: 0.7;
+        cursor: pointer;
+        padding: 3px;
+        height: 30px;
+        width: 30px;
+      }
+      // navnar menu itrm
+      .item {
+        padding: 20px 5px;
+        margin-right: 30px;
+        font-family: "Lato", sans-serif;
+        font-weight: bold;
+        font-size: 12px;
+        color: #fff;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        &:hover {
+          color: #bff3f7;
+        }
+        &:hover > .sub-menu {
+          display: block;
+          animation-name: navArrow-animate;
+          animation-duration: 0.5s;
+        }
+        // icon options
+        .feather {
+          width: 18px;
+          height: 18px;
+          margin-left: 5px;
+        }
+        &:hover > .feather {
+          rotate: 180deg;
+        }
+        // this is my submenu css
+        .sub-menu {
+          display: none;
+          background-color: #fff;
+          list-style: none;
+          border-radius: 5px;
+          color: #000;
+          position: absolute;
+          top: 0;
+          margin-top: 62px;
+          padding: 10px;
+          width: 330px;
+          box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+          font-weight: bold;
+
+          a {
+            text-decoration: none;
+          }
+          &:hover {
+            display: block;
+          }
+          // opinter css
+          &::before {
+            content: " ";
+            position: absolute;
+            height: 30px;
+            width: 30px;
+            text-align: center;
+            background-color: rgb(255, 255, 255);
+            margin-left: 130px;
+            margin-top: -22px;
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+          }
+          //   This CSs Fot Sub Irems
+          .sub-item {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            height: 70px;
+            padding: 10px;
+            transition: 0.5s;
+
+            h2 {
+              color: rgb(0, 26, 75);
+              font-size: 17px;
+            }
+            p {
+              color: rgb(0, 11, 31);
+              margin-top: 5px;
+            }
+
+            // sub item icon css /
+            .feather {
+              width: 30px;
+              height: 30px;
+              margin-right: 20px;
+              color: rgb(24, 58, 205);
+            }
+            &:hover {
+              background-color: #cccccc1e;
+              border-radius: 10px;
+            }
+          }
+        }
+      }
+      //   style nvbar logi icon
+      .login {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 110px;
+        padding: 8px 10px;
+        border-radius: 50px;
+        border: 1px solid #fff;
+
+        cursor: pointer;
+        &:hover > .feather {
+          rotate: 0deg;
+        }
+        &:hover {
+          background-color: #fff;
+          color: #274cb0;
+          font-weight: bold;
+          transition: 0.6s;
+        }
+        // login lock icon
+        .feather {
+          width: 18px;
+          height: 18px;
+        }
+      }
+      //   This Is My Nav BAr Cart Button
+      .cart {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100px;
+        padding: 8px 10px;
+        border-radius: 50px;
+        margin-right: -15px;
+        margin-left: -20px;
+
+        &:hover > .feather {
+          rotate: 360deg;
+          transition: 0.8s;
+        }
+        &:hover {
+          color: #bff3f7;
+        }
+      }
+    }
+  }
+}
+.nav-toggal-w {
+  color: rgb(0, 0, 0) !important;
+  animation-name: menu-animate;
+  animation-duration: 0.5s;
+}
+.scrolled-navbar {
+  transition: 0.5s;
+  background-color: rgb(255, 255, 255);
+  animation-name: bg-animate;
+  animation-duration: 0.5s;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  .nav-img {
+    filter: grayscale(100%) !important;
+  }
+  .menu .menu-item {
+    .item {
+      color: #000000 !important;
+    }
+  }
+}
+
+// for mobile device css
+@media only screen and (max-width: 830px) {
+  .navbar {
+    .menu .menu-item {
+      .item {
+        margin-right: 10px !important;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .nav-toggal {
+    display: block !important;
+    color: #fff;
+    cursor: pointer;
+  }
+  .navbar .menu {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: 1s;
+    animation-name: menu-animate;
+    animation-duration: 0.4s;
+    .menu-item {
+      color: #000;
+      display: block !important;
+      width: 100%;
+      .menu-close {
+        display: block !important;
+      }
+      .item {
+        float: left;
+        color: #000 !important;
+        display: block !important;
+        width: 100%;
+        justify-content: space-between !important;
+        padding: 20px !important;
+
+        .feather {
+          float: right;
+        }
+
+        .sub-menu {
+          position: relative !important;
+          box-shadow: none !important;
+          padding: 0px !important;
+          margin-top: 20px !important;
+          width: 100% !important;
+
+          &::before {
+            display: none !important;
+          }
+
+          .sub-item {
+            width: 100% !important;
+            .feather {
+              margin-right: 30px !important;
+            }
+          }
+        }
+      }
+      .login {
+        float: right;
+        margin-top: 30px;
+        padding: 0 !important;
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 15px !important;
+        color: rgb(0, 0, 0) !important;
+        border: 1px solid #000 !important;
+        .feather {
+          margin: 0px !important;
+        }
+      }
+      .cart {
+        float: left;
+        margin-top: 30px;
+        padding: 0 !important;
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 15px !important;
+        color: rgb(0, 0, 0) !important;
+        border: 1px solid #000 !important;
+        margin-left: 10px !important;
+        .feather {
+          margin: 0px !important;
+        }
+      }
+    }
+  }
+}
+
+// all of animatins
+@keyframes navArrow-animate {
+  from {
+    margin-top: 80px;
+    opacity: 0;
+  }
+  to {
+    margin-top: 62px;
+    opacity: 1;
+  }
+}
+@keyframes bg-animate {
+  from {
+    margin-top: -80px;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0px;
+    opacity: 1;
+  }
+}
+@keyframes menu-animate {
+  from {
+    margin-left: -500px;
+  }
+  to {
+    margin-left: 0px;
+  }
+}
