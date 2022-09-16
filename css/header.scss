@@ -5,6 +5,12 @@
   padding: 0;
   box-sizing: border-box;
   user-select: none;
+  &:hover {
+    outline: none;
+  }
+  &:focus {
+    outline: none;
+  }
 }
 .header {
   width: 100%;
@@ -16,7 +22,6 @@
     width: 100%;
     height: 60px;
     display: flex;
-    transition: 0.5s;
     justify-content: space-between;
     align-items: center;
     position: fixed;
@@ -25,6 +30,7 @@
     .nav-img {
       filter: brightness(0) invert(1);
     }
+
     .nav-toggal {
       display: none;
     }

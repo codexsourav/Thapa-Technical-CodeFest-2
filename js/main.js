@@ -33,4 +33,18 @@ $(document).ready(function () {
       $(".menu").css("display", "none");
     }
   });
+
+  // show more fitucars
+  let see = false;
+  $("#see-all").click(() => {
+    $("#moref").toggle();
+
+    if (see == true) {
+      $("#see-all").text("See All Features");
+      see = false;
+    } else {
+      $("#see-all").text("See Less");
+      see = true;
+    }
+  });
 });
