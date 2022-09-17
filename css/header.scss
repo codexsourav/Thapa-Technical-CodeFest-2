@@ -154,20 +154,34 @@
         justify-content: space-around;
         align-items: center;
         width: 110px;
-        padding: 8px 10px;
+        padding: 0px 0px;
         border-radius: 50px;
         border: 1px solid #fff;
 
+        a {
+          padding: 8px 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-decoration: none;
+          color: #fff;
+          border-radius: 50px;
+          width: 100%;
+          span {
+            margin-left: 15px;
+          }
+          &:hover > .feather {
+            rotate: 0deg;
+          }
+          &:hover {
+            background-color: #fff;
+            color: #274cb0;
+            font-weight: bold;
+            transition: 0.6s;
+          }
+        }
         cursor: pointer;
-        &:hover > .feather {
-          rotate: 0deg;
-        }
-        &:hover {
-          background-color: #fff;
-          color: #274cb0;
-          font-weight: bold;
-          transition: 0.6s;
-        }
+
         // login lock icon
         .feather {
           width: 18px;
@@ -213,6 +227,11 @@
   .menu .menu-item {
     .item {
       color: #000000 !important;
+    }
+    .login {
+      a {
+        color: #000 !important;
+      }
     }
   }
 }
@@ -291,9 +310,13 @@
         display: flex !important;
         justify-content: center;
         align-items: center;
-        padding: 10px 15px !important;
+
         color: rgb(0, 0, 0) !important;
         border: 1px solid #000 !important;
+        a {
+          padding: 10px 15px !important;
+          color: #000 !important;
+        }
         .feather {
           margin: 0px !important;
         }
