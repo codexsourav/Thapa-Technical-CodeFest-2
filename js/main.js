@@ -8,7 +8,7 @@ $(document).ready(function () {
   $("#nav-close").click(function () {
     $(".menu").css("display", "none");
   });
-  // coundowm timer
+  // coundowm timer        it`s My Birthday
   $(".offer-time").countdown("2022/11/02", function (event) {
     $("#day").text(event.strftime("%D"));
     $("#hour").text(event.strftime("%H"));
