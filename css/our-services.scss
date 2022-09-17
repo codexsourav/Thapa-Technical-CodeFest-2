@@ -5,7 +5,7 @@
   margin-top: 50px;
   .title {
     text-align: center;
-    color: #03123b;
+    color: #071e5c;
   }
   .service-des {
     text-align: center;
@@ -43,14 +43,7 @@
         margin: 10px 0px;
         font-size: 19px;
         cursor: pointer;
-        &:hover {
-          background-color: #2853c9b2;
-          color: #fff;
-          border-radius: 10px;
-        }
-        &:hover > .feather {
-          color: #fff;
-        }
+
         .feather {
           color: #09236b;
           margin-right: 20px;

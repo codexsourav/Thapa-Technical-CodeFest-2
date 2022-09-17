@@ -47,4 +47,8 @@ $(document).ready(function () {
       see = true;
     }
   });
+
+  //Fotter Year
+  const yer = new Date().getFullYear();
+  $("#yer").html(yer);
 });
