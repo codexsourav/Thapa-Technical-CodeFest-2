@@ -1,9 +1,31 @@
-# Thapa-Technical-CodeFest-2
-Create Hostinger Modified Design For Thapa Technical CodeFest 2
-
 <h1><a href="https://github.com/codexsourav/Thapa-Technical-CodeFest-2/raw/master/demo.png" target="_self"><img alt="demo" src="https://github.com/codexsourav/Thapa-Technical-CodeFest-2/raw/master/demo.png" style="margin-bottom:20px; margin-top:20px; width:100%" /></a></h1>
 
-<h1>&nbsp;</h1>
+<p>Hello I am sourav i create this project For&nbsp;Thapa Technical Codefest.It&#39;s a monthly event where we will give a project and you have to submit your project. Codefest will be mostly related to frontend projects and occasionally fullstack project.</p>
+
+<p>&nbsp;</p>
+
+<h1>About the Challenge</h1>
+
+<p>Like our previous codefest, this codefest is also creating static website with no need of creating backend of the website. This time, it is compulsory for you to create a redesigned version of Hostinger website. You aren&#39;t supposed to create clone of it but to think yourself about how the design can be improved and implement it in code. You have to only code the front-end part, no back-end code is needed.</p>
+
+<p>Here are the things that are important/required for your redesigned website:</p>
+
+<p>&nbsp;</p>
+
+<ul>
+	<li>Create redesigned landing page of Hostinger</li>
+	<li>Responsive navbar and mega menu as an optional tweak</li>
+	<li>Proper hero section</li>
+	<li>Pricing section</li>
+	<li>Testimonial section</li>
+	<li>Services section</li>
+	<li>Login/Register page (optionally)</li>
+</ul>
+
+<p><br />
+You can also think about different other creative ideas to add into the website. Try not to imitate or clone the website but rather create redesigned version of it using your creativity. Making unrelated websites isn&#39;t allowed.</p>
+
+<p>&nbsp;</p>
 
 <h1>Demo :&nbsp;<a href="https://souravcodefest.web.app" rel="nofollow">Link View Site</a></h1>
 
